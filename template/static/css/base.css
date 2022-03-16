@@ -1,0 +1,307 @@
+/**
+author: 古雪瑞
+updateTime: 2020-04-07
+**/
+/* 公共样式 */
+.v-application {
+  font-family: Arial !important;
+  min-width: 1280px;
+}
+.v-snack__content {
+  justify-content: center;
+}
+.v-application .error--text {
+  color: var(--v-primary-base);
+  caret-color: #000 !important;
+  font-weight: 500;
+}
+.del-dialog {
+  height: 164px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 4px 0px rgba(204, 204, 204, 0.81);
+}
+.del-dialog-title {
+  justify-content: center;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  /* color: rgba(58,58,58,1); */
+  padding-top: 60px !important;
+}
+.del-dialog-btn {
+  font-size: 12px !important;
+  font-weight: 400;
+}
+.label {
+  height: 56px;
+  line-height: 56px;
+  text-align: right;
+}
+.disbeled-text {
+  text-align: left;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+.disabled-label {
+  text-align: right;
+  color: #aaaaaa;
+}
+.v-input,
+.v-label {
+  font-size: 14px !important;
+}
+/* 菜单栏样式 */
+.v-list
+  .v-list-item__icon
+  .v-list-group__header
+  .v-list-item
+  .v-list-item--link {
+  margin-right: 4px;
+}
+.v-list--dense .v-list-item .v-list-item__icon,
+.v-list-item--dense .v-list-item__icon {
+  margin-right: 10px;
+}
+.v-list--dense .v-list-item .v-list-item__icon .v-icon,
+.v-list-item--dense .v-list-item__icon {
+  font-size: 20px;
+}
+.v-slide-group__content a {
+  margin-left: 0 !important;
+}
+.v-list-group__header__append-icon {
+  min-width: 30px !important;
+}
+.theme--light .v-application {
+  background: var(--v-background-base);
+}
+.v-list-group__items {
+  padding-top: 9px;
+}
+.v-list-group--active div.v-list-item--active {
+  color: var(--v-primary-base) !important;
+  border-radius: 3px;
+}
+.v-list-group__items {
+  padding-top: 9px;
+}
+.v-list-group__items a.v-list-item {
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  opacity: 0.71;
+}
+.v-list-group__items a.v-list-item--active {
+  color: var(--v-primary-base) !important;
+  opacity: 1;
+  background-color: var(--v-leftMenuActiveBgColor-base) !important;
+  border-radius: 3px;
+  border-right: 3px solid var(--v-primary-base);
+}
+.theme--dark.v-list-item--active::before {
+  opacity: 0;
+}
+.v-list-group
+  .v-list-group__header
+  .v-list-item__icon.v-list-group__header__append-icon {
+  margin-left: 0;
+}
+.v-list-group .v-list-item .v-list-item__icon .v-icon,
+.v-list-group .v-list-item .v-list-item__content .menu-primary-text-color {
+  color: #333 !important;
+}
+.v-list-group .v-list-item--active .v-list-item__icon .v-icon,
+.v-list-group
+  .v-list-item--active
+  .v-list-item__content
+  .menu-primary-text-color {
+  color: var(--v-primary-base) !important;
+}
+.v-navigation-drawer {
+  transition: all linear 0.1s;
+}
+/* 菜单栏样式 */
+/* 取消按钮的样式 */
+.cancelButton {
+  border: 1px solid rgba(221, 222, 226, 1);
+}
+/* button 的最小宽度 高度 */
+.v-btn:not(.v-btn--round).v-size--default {
+  /* min-width:78px; */
+  height: 28px;
+  font-size: 12px;
+  font-weight: 400;
+}
+/* input高度 */
+.v-input__control {
+  height: 40px;
+}
+/* textarea 高度 */
+.v-textarea .v-input__control {
+  height: auto;
+}
+/* textarea  */
+.v-textarea .v-text-field__details {
+  min-height: 0px !important;
+  margin-bottom: 0px !important;
+}
+.v-textarea .v-text-field__details .v-messages {
+  min-height: 5px !important;
+  margin-bottom: 0px !important;
+}
+.v-application .error--text .v-input__control {
+  height: auto;
+}
+/* 弹框头部 */
+.v-dialog > .v-card > .v-card__title {
+  font-family: PingFang SC;
+  font-weight: 800;
+  padding: 4px 24px 4px;
+}
+.v-toolbar__title {
+  font-size: 16px !important;
+}
+/* 弹框底部 */
+.v-card__actions {
+  padding: 6px;
+}
+/* 分页组件样式 */
+/* .pagination > li > button {
+  box-shadow: none;
+  font-size: 12px;
+} */
+.footer__select {
+  display: flex;
+  align-items: center;
+  flex: 0 0 0;
+  justify-content: flex-start;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+.footer__select .v-select__slot {
+  width: 70px;
+}
+.footer__select
+  .v-select__slot
+  .v-select__selections
+  .v-select__selection--comma {
+  margin-left: 12px;
+}
+/* 改变主体内容高度，消除外侧滚动条 */
+.v-application--wrap {
+  min-height: 92vh;
+}
+.v-application--wrap + .v-content {
+  padding-top: 62px;
+}
+.activeUserDef {
+  background-color: var(--v-tableRowHoverActive-base);
+}
+/* autocomplete mt为0 */
+.v-autocomplete__content {
+  margin-top: 0;
+}
+/* tab标签样式 */
+.v-tabs-bar__content a.v-tab:first-child {
+  padding-left: 0;
+}
+.v-tabs-bar__content a.v-tab--active {
+  background-color: var(--v-background-base);
+  color: var(--v-primary-base) !important;
+  padding-right: 16px !important;
+}
+/* .v-tabs-bar__content .v-tab--active span {
+  padding-left: 24px;
+} */
+/* tab标签样式--结束 */
+/* 搜索表单样式 */
+.v-expansion-panel-content__wrap {
+  padding-left: 0;
+}
+.theme--light.v-input input::-webkit-input-placeholder,
+.theme--light.v-input textarea::-webkit-input-placeholder,
+.theme--dark.v-input input::-webkit-input-placeholder,
+.theme--dark.v-input textarea::-webkit-input-placeholder {
+  color: #c1c1c1;
+}
+.theme--light.v-input input::-moz-placeholder,
+.theme--light.v-input textarea::-moz-placeholder,
+.theme--dark.v-input input::-moz-placeholder,
+.theme--dark.v-input textarea::-moz-placeholder {
+  color: #c1c1c1;
+}
+.theme--light.v-input input:-ms-input-placeholder,
+.theme--light.v-input textarea:-ms-input-placeholder,
+.theme--dark.v-input input:-ms-input-placeholder,
+.theme--dark.v-input textarea:-ms-input-placeholder {
+  color: #c1c1c1;
+}
+.theme--light.v-input input::-ms-input-placeholder,
+.theme--light.v-input textarea::-ms-input-placeholder,
+.theme--dark.v-input input::-ms-input-placeholder,
+.theme--dark.v-input textarea::-ms-input-placeholder {
+  color: #c1c1c1;
+}
+.theme--light.v-input input::placeholder,
+.theme--light.v-input textarea::placeholder,
+.theme--dark.v-input input::placeholder,
+.theme--dark.v-input textarea::placeholder {
+  color: #c1c1c1;
+}
+/* 表格表头样式 */
+.theme--light.v-data-table thead tr th {
+  color: #333;
+  font-weight: bold;
+}
+.theme--light .v-tabs > .v-tabs-bar {
+  background: none;
+}
+.v-expansion-panel .base_searchCondition_style {
+  font-size: 16px !important;
+  font-family: Arial !important;
+  padding-bottom: 0px !important;
+}
+/* autocomplete组件公共样式，设置最大宽度 */
+.v-autocomplete__content {
+  max-width: 60%;
+}
+.v-autocomplete__content .v-list-item__title {
+  white-space: normal;
+}
+
+/* 表格复选框样式 */
+.v-data-table__wrapper
+  tbody
+  tr.v-data-table__selected
+  .v-data-table__checkbox
+  .theme--light.v-icon {
+  color: rgba(0, 0, 0, 0.54);
+}
+.v-data-table__wrapper tbody tr .v-data-table__checkbox .theme--light.v-icon {
+  color: rgba(0, 0, 0, 0.34);
+}
+.v-sheet--tile {
+  border-radius: 4px;
+}
+.v-treeview > .v-treeview-node--leaf {
+  cursor: pointer;
+}
+.v-application--is-ltr .v-treeview-node__content {
+  cursor: pointer;
+}
+
+/* 左侧树结构的卡片去掉左右两边border */
+.theme--light.v-card.v-card--outlined {
+  border-left: 0;
+  border-right: 0;
+}
+
+.v-application .elevation-3 {
+  box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.02), 0 0px 0px 0 rgba(0, 0, 0, 0.02),
+    0 0px 1px 0 rgba(0, 0, 0, .14) !important;
+}
+.theme--light.v-text-field--outlined fieldset {
+  border-color: rgba(0, 0, 0, .14);
+}
+/* 搜索组建 baseSearchTwo.vue 在风险标签中的时间下拉选项层级. 2020-12-17修改，注释掉此css，因为此css影响了多选下拉框的下拉选项的展示。修改图表中的title 的z-index值为8，解决了此问题 */
+.v-menu__content {
+  /* z-index: 80 !important; */
+}
